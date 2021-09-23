@@ -50,13 +50,14 @@ Stampare Nome, Cognome e la media dei voti di ogni alunno. -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Snack 2</title>
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
     <header>
         <h1>Classe #38: media voti</h1>
     </header>
 
-    <main>
+    <main class="main-row">
 
         <table>
             <thead>
@@ -70,7 +71,7 @@ Stampare Nome, Cognome e la media dei voti di ogni alunno. -->
             <tbody>
             
                 <?php foreach ($class as $student) {?> 
-                    <?php $average = get_votes_average($student['subject']);?>
+                    <?php $average = get_votes_average($student['subject']) ?>
 
                     <tr>
                         <td><?php echo $student['name'] ?> </td>

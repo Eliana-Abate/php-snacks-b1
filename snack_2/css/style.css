@@ -1,0 +1,19 @@
+.main-row{
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+}
+
+h1 {
+  text-align: center;
+}
+
+table {
+  border-collapse: collapse;
+  width: 50%;
+}
+
+td, th {
+    border: 1px solid gray;
+    padding: 10px;
+  }
