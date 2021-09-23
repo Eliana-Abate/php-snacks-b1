@@ -19,6 +19,8 @@
 
 ?>
 
+<?php $numbers_array = [] ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -28,6 +30,11 @@
     <title>Snack 1</title>
 </head>
 <body>
+
+    
+
+
+    <?php echo $numbers_array = get_random_number(1, 50, 16) ?>
     
 </body>
 </html>
