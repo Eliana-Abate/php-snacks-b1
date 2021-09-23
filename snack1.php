@@ -1,3 +1,24 @@
+<?php 
+    function get_random_number($min, $max, $items) {
+    
+        $numbers = [];
+
+        while (count($numbers) < $items) {
+            $random = rand($min, $max);
+
+            if (!in_array($random, $numbers)) {
+                $numbers[] = $random;
+            }
+
+        }
+
+        return $numbers;
+
+        
+    }
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
