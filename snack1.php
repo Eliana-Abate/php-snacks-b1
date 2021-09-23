@@ -35,6 +35,8 @@ più di una volta. Stampare i numeri in pagina. -->
 </head>
 <body>
 
+    <h1>Lista casuale di 15 numeri compresi tra 1 e 50</h1>
+
     <?php $numbers_array = get_random_number(1, 50, 15) ?>
     <ul>
       <?php foreach ($numbers_array as $num) {?> 
