@@ -9,24 +9,36 @@ Stampare Nome, Cognome e la media dei voti di ogni alunno. -->
     $class = [
         ['name' => 'John', 
         'surname' => 'Doe', 
-        'subject' => ['7', '6', '3', '8', '5']
+        'subject' => ['7', '6', '3', '8', '5'],
         ],
 
         ['name' => 'Alice', 
         'surname' => 'Smith', 
-        'subject' => ['6', '6', '7', '6', '8']
+        'subject' => ['6', '6', '7', '6', '8'],
         ],
 
         ['name' => 'Walter', 
         'surname' => 'White', 
-        'subject' => ['4', '7', '6', '5', '5']
+        'subject' => ['4', '7', '6', '5', '5'],
         ],
 
         ['name' => 'Jessica', 
         'surname' => 'Brown', 
-        'subject' => ['8', '9', '7', '9', '7']
+        'subject' => ['8', '9', '7', '9', '7'],
         ],
-    ]
+    ];
+
+    function get_votes_average($subject) {
+
+        $sum = 0;
+
+        for ($i = 0; $i < count($subject); $i++) {
+
+            $sum += ($subject[$i] / count($subject));
+        }
+
+        return $sum;
+    }
 
 ?>
 
@@ -39,6 +51,15 @@ Stampare Nome, Cognome e la media dei voti di ogni alunno. -->
     <title>Snack 2</title>
 </head>
 <body>
+
+     
+
+    <?php
+        $array = ['8', '9', '7', '9', '7'];
+
+        echo $average = get_votes_average($array);
+    
+     ?>
     
 </body>
 </html>
