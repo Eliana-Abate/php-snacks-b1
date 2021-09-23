@@ -13,7 +13,6 @@
         }
 
         return $numbers;
-
         
     }
 
@@ -31,10 +30,14 @@
 </head>
 <body>
 
-    
+    <?php $numbers_array = get_random_number(1, 50, 15) ?>
+    <ul>
+      <?php foreach ($numbers_array as $num) {?> 
+        <li><?php echo $num ?> </li>
+      <?php } ?>
+    </ul>
 
-
-    <?php echo $numbers_array = get_random_number(1, 50, 16) ?>
+    <?php var_dump($numbers_array); ?>
     
 </body>
 </html>
